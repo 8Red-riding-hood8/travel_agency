@@ -85,8 +85,40 @@ a {
   justify-content: center;
   background-color: white;
 }
-.info__hotel__head {
-  text-align: center;
+.info__item--callback {
+  background-color: rgb(255, 71, 88);
+}
+.info__hotel {
+  display: block;
+  margin: 0 20% 0 20%;
+}
+.info__hotel__item {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.info__hotel__item__description {
+  background-color: white;
+  border-radius: 2%;
+  width: 300px;
+  margin: 10px 1% 10px 1%;
+  display: flex;
+  flex-direction: column;
+}
+.info__hotel__item__description__img {
+  width: 100%;
+  border-radius: 2% 2% 0 0;
+}
+.info__hotel__item__description__text {
+  border-bottom: 1px solid rgb(239, 242, 244);
+}
+.info__hotel__item__description__details {
+  display: flex;
+  justify-content: space-around;
+}
+.info__hotel__item__description__details--specialized {
+  justify-content: space-between;
 }
 
 .footer {

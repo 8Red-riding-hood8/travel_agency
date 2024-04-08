@@ -38,7 +38,6 @@ h1 {
     &__item{
         position: relative;
         width: 30%;
-
         &:hover .subnav {
             display: flex;
             flex-direction: column;
@@ -50,7 +49,6 @@ h1 {
             display: none;
             position: absolute;
         }
-
         .subnav .subnav__item {
             white-space: nowrap;
         }
@@ -78,30 +76,56 @@ a {
 }
 
 .info {
-
     &__head {
         font-size: 30px;
         text-align: center;
     }
-
     &__country {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         font-size: 20px;
-    }
-    
+    } 
     &__search,
     &__item--callback {
         display: flex;
         justify-content: center;
         background-color: $color_main;
     }
-
+    &__item--callback {
+        background-color: rgb(255, 71, 88);
+    }
     &__hotel {
-        &__head {
-            text-align: center;
+        display: block;
+        margin: 0 20% 0 20%;
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            &__description {
+                background-color: $color_main;
+                border-radius: 2%;
+                width: 300px;
+                margin: 10px 1% 10px 1%;
+                display: flex;
+                flex-direction: column;
+                &__img {
+                    width: 100%;
+                    border-radius: 2% 2% 0 0;
+                }
+                &__text {
+                    border-bottom: 1px solid $color_back;
+                }
+                &__details {
+                    display: flex;
+                    justify-content:space-around;
+                    &--specialized {
+                        justify-content:space-between;
+                    }
+                }
+            }
         }
     }
 }
