@@ -1,0 +1,135 @@
+$main_color_element: rgb(17, 17, 17);
+$color_main:white;
+$color_primery: orange;
+$color_back: rgb(239, 242, 244);
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+body {
+    background-color: $color_back;
+}
+
+.img_country {
+    width: 100%;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: $color_main;
+    font-size: 48px;
+    font-family: "Cabin", sans-serif;
+}
+
+.nav {
+    display: flex;
+    width: 50%;
+    li {
+        padding: 10px;
+        background-color: $color_main;
+        font-size: 25px;
+    }
+    li:hover {
+        border: 1px solid $main_color_element;
+        display: block;
+    }
+    &__item{
+        position: relative;
+        width: 30%;
+
+        &:hover .subnav {
+            display: flex;
+            flex-direction: column;
+        }
+        .subnav {
+            top: 100%;
+            left: -1px;
+            width: 100%;
+            display: none;
+            position: absolute;
+        }
+
+        .subnav .subnav__item {
+            white-space: nowrap;
+        }
+    }
+    &__link__icon {
+        padding-left: 29%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $main_color_element;
+    padding-right: 0.5%;
+}
+
+.head__menu {
+    width: 100%;
+    position: absolute;
+    position: fixed; /*id*/
+    top: 0;
+    background-color: $color_main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+
+    &__head {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__country {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    &__search,
+    &__item--callback {
+        display: flex;
+        justify-content: center;
+        background-color: $color_main;
+    }
+
+    &__hotel {
+        &__head {
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+.footer {
+    background-color: $main_color_element;
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__share {
+        display: inline-flex;
+        padding: 18px 1% 10px 1%;
+        color: $color_main;
+    }
+    &__logo {
+        color: $color_main;
+        margin-right: 10px;
+    }
+
+    &__text {
+        font-size: 20px;
+    }
+
+}

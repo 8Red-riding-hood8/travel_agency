@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  background-color: rgb(239, 242, 244);
+}
+
+.img_country {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-family: "Cabin", sans-serif;
+}
+
+.nav {
+  display: flex;
+  width: 50%;
+}
+.nav li {
+  padding: 10px;
+  background-color: white;
+  font-size: 25px;
+}
+.nav li:hover {
+  border: 1px solid rgb(17, 17, 17);
+  display: block;
+}
+.nav__item {
+  position: relative;
+  width: 30%;
+}
+.nav__item:hover .subnav {
+  display: flex;
+  flex-direction: column;
+}
+.nav__item .subnav {
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+.nav__item .subnav .subnav__item {
+  white-space: nowrap;
+}
+.nav__link__icon {
+  padding-left: 29%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(17, 17, 17);
+  padding-right: 0.5%;
+}
+
+.head__menu {
+  width: 100%;
+  position: absolute;
+  position: fixed; /*id*/
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__head {
+  font-size: 30px;
+  text-align: center;
+}
+.info__country {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+}
+.info__search, .info__item--callback {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.info__hotel__head {
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(17, 17, 17);
+}
+.footer__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__share {
+  display: inline-flex;
+  padding: 18px 1% 10px 1%;
+  color: white;
+}
+.footer__logo {
+  color: white;
+  margin-right: 10px;
+}
+.footer__text {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
