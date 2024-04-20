@@ -94,6 +94,19 @@ a {
   justify-content: center;
   background-color: white;
 }
+.info__search__item {
+  border: none;
+  background-color: rgb(239, 242, 244);
+  border-radius: 10px;
+  font-size: 20px;
+}
+.info__search__item--modified {
+  background-color: rgb(255, 71, 88);
+  color: white;
+}
+.info__search__item--modified:hover {
+  background-color: rgba(255, 71, 89, 0.747);
+}
 .info__item--callback {
   background-color: rgb(255, 71, 88);
 }
@@ -168,6 +181,7 @@ a {
 }
 
 select, input, label {
-  padding: 5px 5px 5px 5px;
+  padding: 5px 30px 5px 30px;
   margin: 20px 10px 20px 10px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

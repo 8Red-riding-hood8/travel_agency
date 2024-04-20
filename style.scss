@@ -100,6 +100,21 @@ a {
         justify-content: center;
         background-color: $color_main;
     }
+    &__search {
+        &__item {
+            border: none;
+            background-color: $color_back;
+            border-radius: 10px;
+            font-size: 20px;
+            &--modified {
+                background-color: $color_primery;
+                color: $color_main;
+                &:hover {
+                    background-color: rgba(255, 71, 89, 0.747);
+                }
+            }
+        }
+    }
     &__item--callback {
         background-color: $color_primery;
     }
@@ -182,6 +197,7 @@ a {
 }
 
 select, input, label {
-    padding: 5px 5px 5px 5px;
+    padding: 5px 30px 5px 30px;
     margin: 20px 10px 20px 10px; 
+    font-size: 16px;
 }
