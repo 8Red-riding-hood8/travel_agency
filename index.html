@@ -9,49 +9,48 @@
         <title>Document</title>
     </head>
     <body>
-        <img src="images/italia.webp" class="img_country" alt="italia"> 
-        <h1>Італія<br>Відкрий країну краси</h1>
+        <div class="container">
+            <img src="images/italia.webp" class="img_country" alt="italia"> 
+            <h1>Італія<br>Відкрий країну краси</h1>
+        </div>
     <header class="head__menu"> <!-- header.menu__head>ul.nav>(li.-item>a.-link[href="#"]{Головна}+ul.subnav>(li.-item>a.-link[href="#"]{Підменю})*3)*3|bem -->
         <a href="#" class="head__logo"><i class="fa-solid fa-plane-departure fa-2xl"></i></a>
         <ul class="nav">
             <li class="nav__item">
-                <a href="#" class="nav__link" id="nav__link">Головна<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                <a href="#" class="nav__link" id="nav__link">Пошук турів<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
                 <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Авіа тури</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Економ тури</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Тури на морі</a></li>
                 </ul>
             </li>
             <li class="nav__item">
-                <a href="#" class="nav__link">Головна<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                <a href="#" class="nav__link">Авіаквитки<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
                 <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Чертерні рейси</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Інформація для пасажирів</a></li>
                 </ul>
             </li>
             <li class="nav__item">
-                <a href="#" class="nav__link">Головна<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                <a href="#" class="nav__link">Додаткові послуни<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
                 <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Бронбвання готелей</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Тури у розстрочку</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Страхування онлайн</a></li>
                 </ul>
             </li>
             <li class="nav__item">
-                <a href="#" class="nav__link">Головна<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                <a href="#" class="nav__link">Візи<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
                 <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Інформація по візам</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Отримати візу</a></li>
                 </ul>
             </li>
             <li class="nav__item">
-                <a href="#" class="nav__link">Головна<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                <a href="#" class="nav__link">Наша компанія<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
                 <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Підменю</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Про компанію</a></li>
+                    <li class="subnav__item"><a href="#" class="subnav__link">Новини</a></li>
                 </ul>
             </li>
         </ul>
@@ -66,72 +65,81 @@
                 </p>
             </div>
             <form action="" class="info__search">
-                <select name="" id=""></select>
-                <select name="" id=""></select>
+                <!-- Виїзд з -->
+                <select name="" id="">
+                    <option value="" disabled selected>Виїзд з</option>
+                </select>
+                <!-- ґтривалість поїздки -->
+                <select name="" id="">
+                    <option value="" disabled selected>Тривалість поїздки</option>
+                </select>
                 <input type="text" placeholder="Дата виїзду" onfocus="(this.type='date')">
-                <select name="" id=""></select>
+                <!-- Хто їде -->
+                <select name="" id="">
+                    <option value="" disabled selected>Кількість подорожуючих</option>
+                </select>
                 <input type="submit" value="Знайти">
             </form>
             <div class="info__hotel">
                 <div class="info__hotel__item">
                     <div class="info__hotel__item__description">
                         <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3>Italy Express</h3>
+                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Italy Express</h3>
                         <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
                             <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
                             <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
                         </div>
                         <div class="info__hotel__item__description__details">
-                            <a href="#">Show Details</a>
-                            <a href="#">See Tour</a>
+                            <a href="#" class="info__hotel__item__description__details__link">Show Date</a>
+                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">See Tour</a>
                         </div>
                     </div>
                     <div class="info__hotel__item__description">
                         <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3>Italy Express</h3>
+                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Italy Express</h3>
                         <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
                             <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
                             <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
                         </div>
                         <div class="info__hotel__item__description__details">
-                            <a href="#">Show Details</a>
-                            <a href="#">See Tour</a>
+                            <a href="#" class="info__hotel__item__description__details__link">Show Date</a>
+                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">See Tour</a>
                         </div>
                     </div>
                     <div class="info__hotel__item__description">
                         <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3>Italy Express</h3>
+                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Italy Express</h3>
                         <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
                             <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
                             <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
                         </div>
                         <div class="info__hotel__item__description__details">
-                            <a href="#">Show Details</a>
-                            <a href="#">See Tour</a>
+                            <a href="#" class="info__hotel__item__description__details__link">Show Date</a>
+                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">See Tour</a>
                         </div>
                     </div>
                     <div class="info__hotel__item__description">
                         <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3>Italy Express</h3>
+                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Italy Express</h3>
                         <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
                             <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
                             <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
                         </div>
                         <div class="info__hotel__item__description__details">
-                            <a href="#">Show Details</a>
-                            <a href="#">See Tour</a>
+                            <a href="#" class="info__hotel__item__description__details__link">Show Date</a>
+                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">See Tour</a>
                         </div>
                     </div>
                     <div class="info__hotel__item__description">
                         <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3>Italy Express</h3>
+                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Italy Express</h3>
                         <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
                             <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
                             <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
                         </div>
                         <div class="info__hotel__item__description__details">
-                            <a href="#">Show Details</a>
-                            <a href="#">See Tour</a>
+                            <a href="#" class="info__hotel__item__description__details__link">Show Date</a>
+                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">See Tour</a>
                         </div>
                     </div>
                 </div>
@@ -140,8 +148,8 @@
             <input type="text" id="name" name="name" placeholder="Ваше ім'я" pattern="[А-ЩЬЮЯҐЄІЇа-щьюяґєіїa-zA-Z]{1,9}" required>
             <input type="tel" id="phone" name="phone" placeholder="+380" pattern="\+380\d{9}" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="checkbox" id="mail_list" name="mail_list" value="mail_list" required>
-            <label for="mail_list">Підписатися на розсилку</label>
+            <input type="checkbox" id="mail_list" name="mail_list" required>
+            <label for="mail_list" class="info__item__subscribe">Підписатися на розсилку</label>
             <input type="submit" value="Відправити">
         </form>
     </div>

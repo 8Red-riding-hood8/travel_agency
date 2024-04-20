@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
 body {
   background-color: rgb(239, 242, 244);
@@ -5,6 +6,10 @@ body {
 
 .img_country {
   width: 100%;
+}
+
+.container {
+  position: relative;
 }
 
 h1 {
@@ -19,11 +24,12 @@ h1 {
 
 .nav {
   display: flex;
-  width: 50%;
+  width: 80%;
 }
 .nav li {
   padding: 10px;
   background-color: white;
+  opacity: 0.95;
   font-size: 25px;
 }
 .nav li:hover {
@@ -32,7 +38,7 @@ h1 {
 }
 .nav__item {
   position: relative;
-  width: 30%;
+  width: 50%;
 }
 .nav__item:hover .subnav {
   display: flex;
@@ -49,7 +55,9 @@ h1 {
   white-space: nowrap;
 }
 .nav__link__icon {
-  padding-left: 29%;
+  position: absolute;
+  right: 2%;
+  top: 50%;
 }
 
 a {
@@ -64,6 +72,7 @@ a {
   position: fixed; /*id*/
   top: 0;
   background-color: white;
+  opacity: 0.95;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +81,11 @@ a {
 .info__head {
   font-size: 30px;
   text-align: center;
+  margin: 40px 0 20px;
 }
 .info__country {
   width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 40px auto;
   text-align: center;
   font-size: 20px;
 }
@@ -87,6 +96,10 @@ a {
 }
 .info__item--callback {
   background-color: rgb(255, 71, 88);
+}
+.info__item__subscribe { /* Текст для підписки*/
+  color: white;
+  font-size: 18px;
 }
 .info__hotel {
   display: block;
@@ -102,7 +115,7 @@ a {
   background-color: white;
   border-radius: 2%;
   width: 300px;
-  margin: 10px 1% 10px 1%;
+  margin: 30px 1% 20px 1%;
   display: flex;
   flex-direction: column;
 }
@@ -110,15 +123,27 @@ a {
   width: 100%;
   border-radius: 2% 2% 0 0;
 }
-.info__hotel__item__description__text {
-  border-bottom: 1px solid rgb(239, 242, 244);
-}
 .info__hotel__item__description__details {
   display: flex;
   justify-content: space-around;
+  margin: 10px 10px 10px 10px;
+}
+.info__hotel__item__description__details--head {
+  font-weight: bold;
+}
+.info__hotel__item__description__details__link {
+  padding: 10px 35px 10px 35px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.info__hotel__item__description__details__link--specialized {
+  background-color: rgb(255, 71, 88);
+  color: white;
 }
 .info__hotel__item__description__details--specialized {
   justify-content: space-between;
+  border-bottom: 1px solid rgb(239, 242, 244);
+  padding: 0 0 15px 0;
 }
 
 .footer {
@@ -140,4 +165,9 @@ a {
 }
 .footer__text {
   font-size: 20px;
+}
+
+select, input, label {
+  padding: 5px 5px 5px 5px;
+  margin: 20px 10px 20px 10px;
 }/*# sourceMappingURL=style.css.map */
