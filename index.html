@@ -43,19 +43,22 @@
     <div class="info">
         <h2 class="info__head">Дивовижна подорож до Італії</h2>
             <p class="info__block">Італія – рай для туриста з найвибагливішими вимогами: гірськолижні курорти Альп, вітрильний спорт озер Маджоре, Ґарда і Комо, термальні джерела, морське узбережжя Венеційської та Лігурійської Рівʼєри. Італія – країна чотирьох морів, трьох вулканів – Везувій, Етна і Стромболі, сусідка Ватикану і Сан-Марино. Італія – антична архітектура, ренесансні храми і палаці, світова галерея мистецтва. Італія – країна туризму і промисловості, автомобілі "Lamborghini" та "Alfa-Romeo", вина Тоскани, текстиль Ломбардії, карнавальні маски Венеції. Італія – центр моди, футболу, католицизму, де свята і спортивні події мають велике значення.</p>
-        <form action="" class="info__search">
-            <!-- Виїзд з -->
-            <select name="" id="" class="info__search__item">
-                <option value="" disabled selected>Виїзд з</option>
+            <form action="https://fom.in.ua/echo" class="info__search" method="POST">
+            <select name="departure_city" id="departure_city" class="info__search__item">
+                <option value="departure" disabled selected>Виїзд з</option>
+                <option value="warsaw">Варшава</option>
+                <option value="kyiv">Київ</option>
             </select>
-            <!-- ґтривалість поїздки -->
-            <select name="" id="" class="info__search__item">
-                <option value="" disabled selected>Тривалість поїздки</option>
+            <select name="deration_trip" id="deration_trip" class="info__search__item">
+                <option value="duration" disabled selected>Тривалість поїздки</option>
+                <option value="5">5 днів</option>
+                <option value="10">10 днів</option>
             </select>
             <input type="text" placeholder="Дата виїзду" onfocus="(this.type='date')" class="info__search__item">
-            <!-- Хто їде -->
-            <select name="" id="" class="info__search__item">
+            <select name="number_travelers" id="" class="info__search__item">
                 <option value="" disabled selected>Кількість подорожуючих</option>
+                <option value="2">2 особи</option>
+                <option value="3">3 особи</option>
             </select>
             <input type="submit" value="Знайти" class="info__search__item info__search__item--modified">
         </form>
