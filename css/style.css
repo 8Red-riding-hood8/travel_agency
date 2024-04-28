@@ -15,7 +15,8 @@ h1 {
   text-align: center;
   color: white;
   font-size: 48px;
-  font-family: "Cabin", sans-serif;
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
 }
 
 .nav {
