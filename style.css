@@ -8,10 +8,6 @@ body {
   width: 100%;
 }
 
-.container {
-  position: relative;
-}
-
 h1 {
   position: absolute;
   top: 40%;
@@ -24,7 +20,7 @@ h1 {
 
 .nav {
   display: flex;
-  width: 80%;
+  width: 62%;
 }
 .nav li {
   padding: 10px;
@@ -68,7 +64,6 @@ a {
 
 .head__menu {
   width: 100%;
-  position: absolute;
   position: fixed; /*id*/
   top: 0;
   background-color: white;
@@ -83,15 +78,17 @@ a {
   text-align: center;
   margin: 40px 0 20px;
 }
-.info__country {
+.info__block {
   width: 70%;
   margin: 20px auto 40px auto;
   text-align: center;
   font-size: 20px;
 }
-.info__search, .info__item--callback {
+.info__contacts, .info__search, .info__item--callback {
   display: flex;
   justify-content: center;
+}
+.info__search {
   background-color: white;
 }
 .info__search__item {
@@ -99,6 +96,7 @@ a {
   background-color: rgb(239, 242, 244);
   border-radius: 10px;
   font-size: 20px;
+  margin: 20px 10px 20px 10px;
 }
 .info__search__item--modified {
   background-color: rgb(255, 71, 88);
@@ -106,6 +104,9 @@ a {
 }
 .info__search__item--modified:hover {
   background-color: rgba(255, 71, 89, 0.747);
+}
+.info__search__item--contacts {
+  width: 50%;
 }
 .info__item--callback {
   background-color: rgb(255, 71, 88);
@@ -159,6 +160,17 @@ a {
   padding: 0 0 15px 0;
 }
 
+.info__callmove {
+  background: rgb(255, 71, 88);
+  color: white;
+  font-size: 40px;
+  padding: 13px 13px 13px 13px;
+  border-radius: 50%;
+  position: fixed;
+  right: 0.5%;
+  bottom: 0.5%;
+}
+
 .footer {
   background-color: rgb(17, 17, 17);
 }
@@ -169,8 +181,9 @@ a {
 }
 .footer__share {
   display: inline-flex;
-  padding: 18px 1% 10px 1%;
+  padding: 20px 1% 20px 1%;
   color: white;
+  margin-right: 5%;
 }
 .footer__logo {
   color: white;

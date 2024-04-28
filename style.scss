@@ -12,9 +12,6 @@ body {
 .img_country {
     width: 100%;
 }
-.container {
-    position: relative;
-}
 
 h1 {
     position: absolute;
@@ -28,7 +25,7 @@ h1 {
 
 .nav {
     display: flex;
-    width: 80%;
+    width: 62%;
     li {
         padding: 10px;
         background-color: $color_main;
@@ -72,7 +69,6 @@ a {
 
 .head__menu {
     width: 100%;
-    position: absolute;
     position: fixed; /*id*/
     top: 0;
     background-color: $color_main;
@@ -88,30 +84,35 @@ a {
         text-align: center;
         margin: 40px 0 20px;
     }
-    &__country {
+    &__block {
         width: 70%;
         margin: 20px auto 40px auto;
         text-align: center;
         font-size: 20px;
     } 
+    &__contacts,
     &__search,
     &__item--callback {
         display: flex;
         justify-content: center;
-        background-color: $color_main;
     }
     &__search {
+        background-color: $color_main;
         &__item {
             border: none;
             background-color: $color_back;
             border-radius: 10px;
             font-size: 20px;
+            margin: 20px 10px 20px 10px; 
             &--modified {
                 background-color: $color_primery;
                 color: $color_main;
                 &:hover {
                     background-color: rgba(255, 71, 89, 0.747);
                 }
+            }
+            &--contacts {
+                width: 50%;
             }
         }
     }
@@ -168,6 +169,17 @@ a {
     }
 }
 
+.info__callmove {
+    background: $color_primery;
+    color: $color_main;
+    font-size: 40px;
+    padding: 13px 13px 13px 13px;
+    border-radius: 50%;
+    position: fixed;
+    right: 0.5%;
+    bottom: 0.5%;
+}
+
 
 
 
@@ -182,8 +194,9 @@ a {
 
     &__share {
         display: inline-flex;
-        padding: 18px 1% 10px 1%;
+        padding: 20px 1% 20px 1%;
         color: $color_main;
+        margin-right: 5%;
     }
     &__logo {
         color: $color_main;
