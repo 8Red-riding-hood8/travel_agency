@@ -7,151 +7,159 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
         <title>Document</title>
     </head>
     <body>
-        <div class="container">
-            <img src="images/italia.webp" class="img_country" alt="italia"> 
-            <h1>Італія<br>Відкрий країну краси</h1>
-        </div>
-    <header class="head__menu"> <!-- header.menu__head>ul.nav>(li.-item>a.-link[href="#"]{Головна}+ul.subnav>(li.-item>a.-link[href="#"]{Підменю})*3)*3|bem -->
-        <a href="#" class="head__logo"><i class="fa-solid fa-plane-departure fa-2xl"></i></a>
-        <ul class="nav">
-            <li class="nav__item">
-                <a href="#" class="nav__link" id="nav__link">Пошук турів<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
-                <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Авіа тури</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Економ тури</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Тури на морі</a></li>
+        <header class="header">
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link"><i class="fa-solid fa-plane-departure fa-xl"></i></a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Пошук турів<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                        <ul class="subnav">
+                            <li class="subnav__item"><a href="#" class="subnav__link">Авіа тури</a></li>
+                            <li class="subnav__item"><a href="#" class="subnav__link">Економ тури</a></li>
+                            <li class="subnav__item"><a href="#" class="subnav__link">Тури на морі</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Візи<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
+                        <ul class="subnav">
+                            <li class="subnav__item"><a href="#" class="subnav__link">Інформація по візам</a></li>
+                            <li class="subnav__item"><a href="#" class="subnav__link">Отримати візу</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Наша компанія<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i> </a>
+                        <ul class="subnav">
+                            <li class="subnav__item"><a href="pages/about.html" class="subnav__link">Про компанію</a></li>
+                            <li class="subnav__item"><a href="#" class="subnav__link">Новини</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Візи<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
-                <ul class="subnav">
-                    <li class="subnav__item"><a href="#" class="subnav__link">Інформація по візам</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Отримати візу</a></li>
-                </ul>
-            </li>
-            <li class="nav__item">
-                <a href="#" class="nav__link">Наша компанія<i class="fa-solid fa-chevron-down fa-xs nav__link__icon"></i></a>
-                <ul class="subnav">
-                    <li class="subnav__item"><a href="pages/about.html" class="subnav__link">Про компанію</a></li>
-                    <li class="subnav__item"><a href="#" class="subnav__link">Новини</a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
-    <div class="info">
-        <h2 class="info__head">Дивовижна подорож до Італії</h2>
-            <p class="info__block">Італія – рай для туриста з найвибагливішими вимогами: гірськолижні курорти Альп, вітрильний спорт озер Маджоре, Ґарда і Комо, термальні джерела, морське узбережжя Венеційської та Лігурійської Рівʼєри. Італія – країна чотирьох морів, трьох вулканів – Везувій, Етна і Стромболі, сусідка Ватикану і Сан-Марино. Італія – антична архітектура, ренесансні храми і палаці, світова галерея мистецтва. Італія – країна туризму і промисловості, автомобілі "Lamborghini" та "Alfa-Romeo", вина Тоскани, текстиль Ломбардії, карнавальні маски Венеції. Італія – центр моди, футболу, католицизму, де свята і спортивні події мають велике значення.</p>
-            <form action="https://fom.in.ua/echo" class="info__search" method="POST">
-            <select name="departure_city" id="departure_city" class="info__search__item">
-                <option value="departure" disabled selected>Виїзд з</option>
-                <option value="warsaw">Варшава</option>
-                <option value="kyiv">Київ</option>
-            </select>
-            <select name="deration_trip" id="deration_trip" class="info__search__item">
-                <option value="duration" disabled selected>Тривалість поїздки</option>
-                <option value="5">5 днів</option>
-                <option value="10">10 днів</option>
-            </select>
-            <input type="text" placeholder="Дата виїзду" onfocus="(this.type='date')" class="info__search__item">
-            <select name="number_travelers" id="" class="info__search__item">
-                <option value="" disabled selected>Кількість подорожуючих</option>
-                <option value="2">2 особи</option>
-                <option value="3">3 особи</option>
-            </select>
-            <input type="submit" value="Знайти" class="info__search__item info__search__item--modified">
-        </form>
-        <div class="info__hotel">
-            <div class="info__hotel__item">
-                    <div class="info__hotel__item__description">
-                        <img src="images/italy_express.webp" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Італійський експрес</h3>
-                        <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
-                            <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
-                            <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
-                        </div>
-                        <div class="info__hotel__item__description__details">
-                            <a href="#" class="info__hotel__item__description__details__link">Дати</a>
-                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">Огляд</a>
-                        </div>
-                    </div>
-                    <div class="info__hotel__item__description">
-                        <img src="images/snow_tour.jpg" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Лижне життя в Доломітових Альпах</h3>
-                        <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
-                            <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
-                            <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
-                        </div>
-                        <div class="info__hotel__item__description__details">
-                            <a href="#" class="info__hotel__item__description__details__link">Дати</a>
-                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">Огляд</a>
-                        </div>
-                    </div>
-                    <div class="info__hotel__item__description">
-                        <img src="images/rome.jpg" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Італія - Тоскана, Рим і Флоренція</h3>
-                        <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
-                            <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
-                            <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
-                        </div>
-                        <div class="info__hotel__item__description__details">
-                            <a href="#" class="info__hotel__item__description__details__link">Дати</a>
-                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">Огляд</a>
-                        </div>
-                    </div>
-                    <div class="info__hotel__item__description">
-                        <img src="images/beach.jpg" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Італійське пляжне життя</h3>
-                        <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
-                            <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
-                            <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
-                        </div>
-                        <div class="info__hotel__item__description__details">
-                            <a href="#" class="info__hotel__item__description__details__link">Дати</a>
-                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">Огляд</a>
-                        </div>
-                    </div>
-                    <div class="info__hotel__item__description">
-                        <img src="images/trekking.jpg" class="info__hotel__item__description__img" alt="italy_express">
-                        <h3 class="info__hotel__item__description__details info__hotel__item__description__details--head">Доломітові Альпи</h3>
-                        <div class="info__hotel__item__description__details info__hotel__item__description__details--specialized">
-                            <p class="info__hotel__item__description__text"><i class="fa-regular fa-calendar"></i> 5 днів</p>
-                            <p><i class="fa-solid fa-hryvnia-sign"></i>500</p>
-                        </div>
-                        <div class="info__hotel__item__description__details">
-                            <a href="#" class="info__hotel__item__description__details__link">Дати</a>
-                            <a href="#" class="info__hotel__item__description__details__link info__hotel__item__description__details__link--specialized">Огляд</a>
-                        </div>
-                    </div>
-                </div>
+            </nav>
+            <div class="hero">
+                <h1 class="hero__title">
+                    <span class="hero__title--primary">Італія</span>
+                    <span class="hero__title--secondary">Відкрий країну краси</span>
+                </h1>
             </div>
-        <form class="info__item info__item--callback">
-            <p id="info__call"></p>
-            <input type="text" id="name" name="name" placeholder="Ваше ім'я" pattern="[А-ЩЬЮЯҐЄІЇа-щьюяґєіїa-zA-Z]{1,9}" required>
-            <input type="tel" id="phone" name="phone" placeholder="+380" pattern="\+380\d{9}" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="checkbox" id="mail_list" name="mail_list" required>
-            <label for="mail_list" class="info__item__subscribe">Підписатися на розсилку</label>
-            <input type="submit" value="Відправити">
-            <a href="#info__call__move" class="info__callmove"><i class="fa-solid fa-phone-flip"></i></a>
-        </form>
-    </div>
+    </header>
+    <main class="main">
+        <section class="info">
+            <h2 class="info__title">Дивовижна подорож до Італії</h2>
+            <p class="info__text">Італія – рай для туриста з найвибагливішими вимогами: гірськолижні курорти Альп, вітрильний спорт озер Маджоре, Ґарда і Комо, термальні джерела, морське узбережжя Венеційської та Лігурійської Рівʼєри. Італія – країна чотирьох морів, трьох вулканів – Везувій, Етна і Стромболі, сусідка Ватикану і Сан-Марино. Італія – антична архітектура, ренесансні храми і палаці, світова галерея мистецтва. Італія – країна туризму і промисловості, автомобілі "Lamborghini" та "Alfa-Romeo", вина Тоскани, текстиль Ломбардії, карнавальні маски Венеції. Італія – центр моди, футболу, католицизму, де свята і спортивні події мають велике значення.</p>
+        </section>
+        <div class="search">
+            <form action="https://fom.in.ua/echo" method="POST">
+                <select name="departure_city" id="departure_city" class="search__item">
+                    <option value="departure" disabled selected>Виїзд з</option>
+                    <option value="warsaw">Варшава</option>
+                    <option value="kyiv">Київ</option>
+                </select>
+                <select name="deration_trip" id="deration_trip" class="search__item">
+                    <option value="duration" disabled selected>Тривалість поїздки</option>
+                    <option value="5">5 днів</option>
+                    <option value="10">10 днів</option>
+                </select>
+                <input type="text" placeholder="Дата виїзду" onfocus="(this.type='date')" class="search__item">
+                <select name="number_travelers" id="number_travelers" class="search__item">
+                    <option value="" disabled selected>Кількість подорожуючих</option>
+                    <option value="2">2 особи</option>
+                    <option value="3">3 особи</option>
+                </select>
+                <input type="submit" value="Знайти" class="search__btn">
+            </form>
+        </div>
+        <section class="hotels">
+            <article class="hotels__item">
+                <img src="images/italy_express.webp" alt="italy_express" class="hotels__image">
+                <h3 class="hotels__title">Італійська експрес подорож</h3>
+                <div class="hotels__info">
+                    <span class="hotels__duration"><i class="fa-regular fa-calendar"></i>5 днів</span>
+                    <span class="hotels__price"><i class="fa-solid fa-hryvnia-sign"></i>500</span>
+                </div>
+                <div class="hotels__links">
+                    <a href="#" class="hotels__link hotels__link--date">Дати</a>
+                    <a href="#" class="hotels__link hotels__link--review">Огляд</a>
+                </div>
+            </article>
+            <article class="hotels__item">
+                <img src="images/snow_tour.jpg" alt="snow_tour" class="hotels__image">
+                <h3 class="hotels__title">Лижне життя в Доломітових Альпах</h3>
+                <div class="hotels__info">
+                    <span class="hotels__duration"><i class="fa-regular fa-calendar"></i>5 днів</span>
+                    <span class="hotels__price"><i class="fa-solid fa-hryvnia-sign"></i>500</span>
+                </div>
+                <div class="hotels__links">
+                    <a href="#" class="hotels__link hotels__link--date">Дати</a>
+                    <a href="#" class="hotels__link hotels__link--review">Огляд</a>
+                </div>
+            </article>
+            <article class="hotels__item">
+                <img src="images/rome.jpg" alt="rome" class="hotels__image">
+                <h3 class="hotels__title">Італія - Тоскана, Рим і Флоренція</h3>
+                <div class="hotels__info">
+                    <span class="hotels__duration"><i class="fa-regular fa-calendar"></i>5 днів</span>
+                    <span class="hotels__price"><i class="fa-solid fa-hryvnia-sign"></i>500</span>
+                </div>
+                <div class="hotels__links">
+                    <a href="#" class="hotels__link hotels__link--date">Дати</a>
+                    <a href="#" class="hotels__link hotels__link--review">Огляд</a>
+                </div>
+            </article>
+            <article class="hotels__item">
+                <img src="images/beach.jpg" alt="beach" class="hotels__image">
+                <h3 class="hotels__title">Італійське пляжне життя</h3>
+                <div class="hotels__info">
+                    <span class="hotels__duration"><i class="fa-regular fa-calendar"></i>5 днів</span>
+                    <span class="hotels__price"><i class="fa-solid fa-hryvnia-sign"></i>500</span>
+                </div>
+                <div class="hotels__links">
+                    <a href="#" class="hotels__link hotels__link--date">Дати</a>
+                    <a href="#" class="hotels__link hotels__link--review">Огляд</a>
+                </div>
+            </article>
+            <article class="hotels__item">
+                <img src="images/trekking.jpg" alt="trekking" class="hotels__image">
+                <h3 class="hotels__title">Доломітові Альпи</h3>
+                <div class="hotels__info">
+                    <span class="hotels__duration"><i class="fa-regular fa-calendar"></i>5 днів</span>
+                    <span class="hotels__price"><i class="fa-solid fa-hryvnia-sign"></i>500</span>
+                </div>
+                <div class="hotels__links">
+                    <a href="#" class="hotels__link hotels__link--date">Дати</a>
+                    <a href="#" class="hotels__link hotels__link--review">Огляд</a>
+                </div>
+            </article>
+        </section>
+        <section class="callback" id="callback">
+            <h2 class="callback__title">Зв'яжіться з нами</h2>
+            <form action="https://fom.in.ua/echo" method="POST">
+                <input class="callback__input" type="text" id="name" name="name" placeholder="Ваше ім'я" pattern="[А-ЩЬЮЯҐЄІЇа-щьюяґєіїa-zA-Z]{1,9}" required>
+                <input class="callback__input" type="tel" id="phone" name="phone" placeholder="+380" pattern="\+380\d{9}" required>
+                <input class="callback__input" type="email" id="email" name="email" placeholder="Email" required>
+                <input class="callback__input" type="checkbox" id="mail_list" name="mail_list" required>
+                <label class="callback__subscribe" for="mail_list">Підписатися на розсилку</label>
+                <input class="callback__input" type="submit" value="Відправити">
+                <a href="#callback" class="callback__link"><i class="fa-solid fa-phone-flip"></i></a>
+            </form>
+        </section>
+    </main>
     <footer class="footer">
-        <div class="footer__item">
-            <div class="footer__share">
-                <a href="" class="footer__logo"><i class="fa-solid fa-plane-departure fa-2x"></i></a>
+            <div class="container">
+                <a href="#" class="footer__logo"><i class="fa-solid fa-plane-departure fa-2x"></i></a>
                 <p class="footer__text"> Будьте там, куди прагне ваше серце!</p>
             </div>
-            <div class="footer__share">
-                <a href="#"><i class="fa-brands fa-2x fa-instagram footer__logo"></i></a>
-                <a href="#"><i class="fa-brands fa-2x fa-facebook footer__logo"></i></a>
-                <a href="#"><i class="fa-brands fa-2x fa-twitter footer__logo"></i></a>
+            <div class="socials">
+                <a class="socials__item" href="#"><i class="fa-brands fa-2x fa-instagram"></i></a>
+                <a class="socials__item" href="#"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                <a class="socials__item" href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
             </div>
-        </div>
     </footer>
 </body>
 </html>
